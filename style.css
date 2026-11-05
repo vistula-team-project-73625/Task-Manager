@@ -1,0 +1,182 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    margin-top: 5px;
+}
+
+/* Main container */
+.container {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Form and task sections */
+.form-section,
+.tasks-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1d4ed8;
+}
+
+/* Form */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    background: #2563eb;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#task-submit {
+    width: 100%;
+    padding: 13px;
+    font-size: 16px;
+}
+
+/* Individual tasks */
+.task-item {
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 15px;
+    background: #ffffff;
+}
+
+.task-title {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.task-description {
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.task-status {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.task-item.completed {
+    border-left-color: #16a34a;
+    background: #f0fdf4;
+}
+
+.task-item button {
+    margin-right: 6px;
+}
+
+.edit-task {
+    background: #d97706;
+}
+
+.delete-task {
+    background: #dc2626;
+}
+
+.toggle-task {
+    background: #16a34a;
+}
+
+/* Messages */
+#status-message {
+    margin-bottom: 15px;
+    color: #475569;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .container {
+        padding: 12px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .form-section,
+    .tasks-section {
+        padding: 18px;
+    }
+}

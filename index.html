@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Vistula University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Task Manager</h1>
+    <p>Manage your daily tasks easily</p>
+    <p>Student ID: <span id="student-id">73625</span></p>
+</header>
+
+<main class="container">
+
+    <section class="form-section">
+        <h2 id="form-heading">Add New Task</h2>
+
+        <form id="task-form">
+
+            <label for="task-title">Task Title</label>
+            <input
+                    type="text"
+                    id="task-title"
+                    placeholder="Enter task title"
+                    required
+            >
+
+            <label for="task-description">Task Description</label>
+            <textarea
+                    id="task-description"
+                    placeholder="Enter task description"
+                    rows="4"
+            ></textarea>
+
+            <button type="submit" id="task-submit">
+                Add Task
+            </button>
+
+        </form>
+    </section>
+
+    <section class="tasks-section">
+        <h2>My Tasks</h2>
+
+        <p id="status-message" role="status" aria-live="polite">
+            Loading tasks...
+        </p>
+
+        <div id="task-list">
+            <!-- Tasks will be displayed here -->
+        </div>
+    </section>
+
+    <footer>
+        <a href="contribution.html" id="contribution-link">
+            View Partner Contribution
+        </a>
+    </footer>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
